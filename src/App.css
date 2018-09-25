@@ -1,0 +1,150 @@
+body {
+  background: rgb(204, 204, 204);
+}
+
+ul.space > li {
+  padding: 5px 0;
+}
+
+.Page {
+  background: white;
+  background-image: url(./logo.svg);
+  background-repeat: no-repeat;
+  background-position: -200px 200px;
+  background-size: 150%;
+  display: block;
+  box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  padding: 30px;
+  box-sizing: border-box;
+  width: 21cm;
+  height: 29.7cm;
+  font-family: sans-serif;
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.Header img {
+  flex: 1;
+  width: 150px;
+  height: 150px;
+}
+
+.Header .informations {
+  flex: 1;
+  padding-left: 30px;
+}
+
+.Header .informations .top {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+.Header .informations .details {
+  align-self: flex-end;
+}
+
+.Header h1 {
+  flex: 1;
+  font-size: 50px;
+  margin: 0;
+  line-height: 1;
+}
+
+.Header h2 {
+  font-size: 26px;
+  margin: 0;
+}
+
+.Row {
+  display: flex;
+}
+
+.Column {
+  flex: 4;
+}
+
+.Column.large {
+  flex: 6;
+  padding-left: 30px;
+}
+
+.Block {
+  padding: 0 0 10px;
+}
+
+.List.horizontal {
+  list-style-type: none;
+  margin: 0;
+  padding: 8px 0;
+}
+
+.List.horizontal > li {
+  display: inline-block;
+  padding-right: 4px;
+}
+
+.Job {
+  margin-bottom: 20px;
+}
+
+.Job .date {
+  font-size: 15px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #ccc;
+}
+
+.Job h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.Job .description {
+  font-size: 15px;
+}
+
+.Footer {
+  display: flex;
+  flex: 1;
+}
+
+.Footer > div {
+  flex: 1;
+  justify-content: center;
+  text-align: right;
+}
+
+@media print {
+  .primary {
+    color: green;
+  }
+  body,
+  .Page {
+    margin: 0 !important;
+    box-shadow: 0 !important;
+  }
+}
+
+.thin {
+  font-weight: 100;
+}
+
+.primary {
+  color: deepskyblue;
+}
+
+.light {
+  color: dimgray;
+}
+
+.lighter {
+  color: darkgrey;
+}
