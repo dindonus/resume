@@ -1,7 +1,7 @@
 import React from 'react';
-import Picture from './nicolas.jpg';
+import Picture from '../images/nicolas.jpg';
 
-const Header = () => {
+const Header = ({ firstname, lastname, title, phone, mail }) => {
   return (
     <div className="Header">
       <div className="picture">
@@ -10,15 +10,15 @@ const Header = () => {
       <div className="informations">
         <div className="top">
           <h1 className="name">
-            <span className="thin light">Nicolas</span>
+            <span className="thin light">{firstname}</span>
             <br />
-            <span className="primary">Cordin</span>
+            <span className="primary">{lastname}</span>
           </h1>
           <div className="details lighter">
-            • nicolas@dindon.us &nbsp; • 06 65 78 68 02
+            • {mail} &nbsp; • {phone}
           </div>
         </div>
-        <h2>Front-end Developer</h2>
+        <h2>{title}</h2>
       </div>
     </div>
   );

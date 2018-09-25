@@ -1,25 +1,25 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import Page from "./Page";
-import Header from "./Header";
-import Row from "./Row";
-import Column from "./Column";
-import Block from "./Block";
-import Job from "./Job";
-import List from "./List";
+import Page from './components/Page';
+import Header from './components/Header';
+import Row from './components/Row';
+import Column from './components/Column';
+import Block from './components/Block';
+import Job from './components/Job';
+import List from './components/List';
 
 class App extends Component {
   render() {
     return (
       <Page>
-        <Header />
+        <Header firstname="Nicolas" lastname="Cordin" title="Front-end Developer" phone="06 65 78 68 02" mail="nicolas@dindon.us" />
         <Row>
           <Column>
             <Block title="About me">
               <p>
-                Passionate about web development for 12 years, I have an
-                insatiable thirst of learning how to improve code quality in
-                order to create great apps with polished user experience.
+                Passionate developer for 12 years, I have an insatiable thirst
+                of learning how to improve code quality in order to create great
+                modern apps with polished user experience.
               </p>
             </Block>
             <Block title="Favorite Technical Skills">
@@ -126,19 +126,19 @@ class App extends Component {
             <Block title="Learning">
               <ul className="space">
                 <li>
-                  <strong>Education :</strong> Bac S{" "}
-                  <span className="lighter">2003</span>, DUT informatique{" "}
+                  <strong>Education :</strong> Bac S{' '}
+                  <span className="lighter">2003</span>, DUT informatique{' '}
                   <span className="lighter">2005</span>.
                 </li>
                 <li>
                   <strong>Daily learning :</strong>
                   <List horizontal>
                     {[
-                      "Egghead",
-                      "Frontend masters",
-                      "Syntax",
-                      "Udemy",
-                      "Youtube"
+                      'Egghead',
+                      'Frontend masters',
+                      'Syntax',
+                      'Udemy',
+                      'Youtube',
                     ]}
                   </List>
                 </li>
@@ -146,11 +146,11 @@ class App extends Component {
                   <strong>Inspired by :</strong>
                   <List horizontal>
                     {[
-                      "Dan Abramov",
-                      "Rober Martin",
-                      "Kent C. Dodds",
-                      "Paul Irish",
-                      "Wes Boss"
+                      'Dan Abramov',
+                      'Rober Martin',
+                      'Kent C. Dodds',
+                      'Paul Irish',
+                      'Wes Boss',
                     ]}
                   </List>
                 </li>
