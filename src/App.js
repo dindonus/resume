@@ -12,7 +12,13 @@ class App extends Component {
   render() {
     return (
       <Page>
-        <Header firstname="Nicolas" lastname="Cordin" title="Front-end Developer" phone="06 65 78 68 02" mail="nicolas@dindon.us" />
+        <Header
+          firstname="Nicolas"
+          lastname="Cordin"
+          title="Front-end Developer"
+          phone="06 65 78 68 02"
+          mail="nicolas@dindon.us"
+        />
         <Row>
           <Column>
             <Block title="About me">
@@ -28,9 +34,9 @@ class App extends Component {
                 <li>React 💖</li>
                 <li>Redux with Thunk or Observable</li>
                 <li>Typescript</li>
-                <li>Jest with Enzime</li>
-                <li>React Testing Library</li>
+                <li>React Testing good practices</li>
                 <li>Node and Electron</li>
+                <li>Webpack</li>
               </ul>
             </Block>
             <Block title="Soft Skills">
@@ -45,13 +51,13 @@ class App extends Component {
             <Block title="Follow me">
               <ul>
                 <li>
-                  Twitter <span className="lighter">@NicoDindon</span>
+                  Twitter <span className="lighter">@NicolasCordin</span>
                 </li>
                 <li>
-                  Codesandbox <span className="lighter">@dindonus</span>
+                  Medium <span className="lighter">@NicolasCordin</span>
                 </li>
                 <li>
-                  Github <span className="lighter">@dindonus</span>
+                  Github <span className="lighter">@ncordin</span>
                 </li>
               </ul>
             </Block>
