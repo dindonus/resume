@@ -19,22 +19,26 @@ class App extends Component {
           phone="06 65 78 68 02"
           mail="nicolas@dindon.us"
         />
+
+        <p>
+          Développeur Web passionné, j'ai une excellente connaissance de
+          Javascript et je suis fasciné par React depuis 2015. Mon background de
+          développeur back PHP m'a apporté une solide connaissance de la POO,
+          des design-patterns et des principes S.O.L.I.D. J'aime implémenter des
+          interfaces utilisateurs modernes, fiables et agréables à utiliser
+          grâce à un code claire et bien architecturé.
+        </p>
         <Row>
           <Column>
-            <Block title="About me">
-              <p>
-                Passionate developer for 12 years, I have an insatiable thirst
-                of learning how to improve code quality in order to create great
-                modern apps with polished user experience.
-              </p>
-            </Block>
             <Block title="Favorite Technical Skills">
               <ul>
-                <li>Deep knowledge of Javascript</li>
+                <li>Deep knowledge of modern Javascript</li>
+                <li>Typescript</li>
                 <li>React 💖</li>
                 <li>Redux with Thunk or Observable</li>
-                <li>Typescript</li>
                 <li>React Testing good practices</li>
+                <li>Styled-components</li>
+                <li>GraphQL Apollo</li>
                 <li>Node and Electron</li>
                 <li>Webpack</li>
               </ul>
@@ -43,29 +47,27 @@ class App extends Component {
               <ul>
                 <li>Clean code - SOLID principles</li>
                 <li>Functional programming</li>
-                <li>Atomic Design and Storybook</li>
+                <li>Atomic Design and Storybook / Docz</li>
                 <li>Profiling and scalability</li>
-                <li>Learn and share with others</li>
+                <li>Strong team spirit</li>
+                <li>User empathy</li>
+                <li>Daily learning</li>
               </ul>
             </Block>
-            <Block title="Follow me">
+            <Block title="About me">
               <ul>
+                <li>
+                  Bac S <span className="lighter">2003</span>
+                </li>
+                <li>
+                  DUT informatique <span className="lighter">2005</span>
+                </li>
                 <li>
                   Twitter <span className="lighter">@NicolasCordin</span>
                 </li>
                 <li>
-                  Medium <span className="lighter">@NicolasCordin</span>
-                </li>
-                <li>
                   Github <span className="lighter">@ncordin</span>
                 </li>
-              </ul>
-            </Block>
-            <Block title="Hobbies">
-              <ul>
-                <li>Dad 👶 👧</li>
-                <li>Drone racing ✈️</li>
-                <li>Gardening 🏡</li>
               </ul>
             </Block>
           </Column>
@@ -75,90 +77,64 @@ class App extends Component {
               <ul>
                 <li>
                   <Job
+                    title="Freelancer / Javascript Developer"
+                    compagny="Dashlane"
+                    from="May 2019"
+                    to="now"
+                    description="J'ai rejoint l'équipe Platform, en charge de l'évolution de la stack, des améliorations architecturales et de l'expérience développeur."
+                    stack={[
+                      'typescript',
+                      'react',
+                      'redux',
+                      'node',
+                      'rxjs',
+                      'jest',
+                    ]}
+                  />
+                </li>
+                <li>
+                  <Job
+                    title="Freelancer / Front-end Developer"
+                    compagny="Lunchr"
+                    from="February 2019"
+                    to="May 2019"
+                    description="Développement de features et support sur la webapp."
+                    stack={[
+                      'react',
+                      'redux',
+                      'styled-components',
+                      'jest',
+                      'ssr',
+                    ]}
+                  />
+                </li>
+                <li>
+                  <Job
                     title="Front-end Developer"
                     compagny="Meetic"
                     from="September 2017"
-                    to="now"
-                    description="Migrate the Angular app to React / Redux."
+                    to="February 2019"
+                    description="J'ai rejoint la feature team en charge de la refonte de la messagerie. J'ai pu jouer un rôle majeur dans la migration d'Angular vers React."
+                    stack={['react', 'redux', 'webpack', 'jest', 'angular-js']}
                   />
                 </li>
                 <li>
                   <Job
                     title="Web Developer"
-                    compagny="MyBestPro"
-                    from="September 2016"
-                    to="September 2017"
-                    description="Launching a new product using Angular, Typescript and PHP Laravel."
-                  />
-                </li>
-                <li>
-                  <Job
-                    title="Front-end Developer"
-                    compagny="Vodeclic"
+                    compagny="MyBestPro @Vodeclic"
                     from="October 2015"
-                    to="January 2016"
-                    description="Migrate the Rails app to React."
-                  />
-                </li>
-                <li>
-                  <Job
-                    title="Web Developer / Entrepreneur"
-                    compagny="carboLab"
-                    from="Octobre 2010"
-                    to="September 2016"
-                    description="Conception & development of browser and mobile games with more than 500k players using Javascript and PHP."
+                    to="September 2017"
+                    description="Launching a new product using Angular and Laravel. Migrate the Rails app to React."
                   />
                 </li>
                 <li>
                   <Job
                     title="Web Developer"
-                    compagny="Owlient (Ubisoft)"
+                    compagny="Pixmania @Ubisoft"
                     from="Juin 2007"
-                    to="September 2010"
-                    description="Development of an hightly scalable browser game (55 millions players) using PHP and Javascript."
+                    to="September 2016"
+                    description="I worked 1 year at Pixmania, 3 years at Ubisoft and 5 years as an entrepreneur. I learned to be a full stack developer, a lot of javascript, and hight scalability."
                   />
-                </li>
-                <li>
-                  <Job
-                    title="Web Developer"
-                    compagny="Pixmania"
-                    from="April 2006"
-                    to="Juin 2007"
-                    description="PHP development of the logistic back-office."
-                  />
-                </li>
-              </ul>
-            </Block>
-            <Block title="Learning">
-              <ul className="space">
-                <li>
-                  <strong>Education :</strong> Bac S{' '}
-                  <span className="lighter">2003</span>, DUT informatique{' '}
-                  <span className="lighter">2005</span>.
-                </li>
-                <li>
-                  <strong>Daily learning :</strong>
-                  <List horizontal>
-                    {[
-                      'Egghead',
-                      'Frontend masters',
-                      'Syntax',
-                      'Udemy',
-                      'Youtube',
-                    ]}
-                  </List>
-                </li>
-                <li>
-                  <strong>Inspired by :</strong>
-                  <List horizontal>
-                    {[
-                      'Dan Abramov',
-                      'Rober Martin',
-                      'Kent C. Dodds',
-                      'Paul Irish',
-                      'Wes Boss',
-                    ]}
-                  </List>
                 </li>
               </ul>
             </Block>
